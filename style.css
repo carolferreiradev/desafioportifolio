@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #25013f;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.imagens {
+    text-align: center;
+}
+
+.imagens img {
+    margin-top: 42px;
+    padding: 40px;
+    width: 250px;
+}
+
+section {
+    text-align: center;
+}
+
+section a {
+    padding: 20px;
+}
+
+section a:hover {
+    padding: 20px;
+    color: rgb(30, 95, 155);
+    transition: 300ms;
+}
+
+.links h1 {
+    margin: 20px;
+    font-size: 50px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.voltar a {
+    color: white;
+    text-decoration: none;
+    float: right;
+    bottom: 20px;
+    margin-right: 10px;
+}
+
+header {
+    padding: 0;
+
+}
+
+header div a {
+    margin: 30px;
+}
+
+header div img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.img {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+header div h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header div ul {
+    margin: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctu {
+    margin-top: 2px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.ctu:hover {
+    background-color: white;
+    color: #25013f;
+    transition: 300ms;
+    font-weight: bold;
+}
+
+div footer a {
+    margin-top: 3px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin: 17px;
+}
+
+div footer a:hover {
+    color: #6360e9;
+    border-bottom: 1px solid #6360e9;
+    transition: 300ms;
+
+}
+
+footer {
+    text-align: center;
+}
+
+/*CARDS*/
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 100px;
+    margin: 60px;
+
+}
+
+.cards {
+    border: 3px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.cards:hover {
+    border: 3px solid #61e7ff;
+    box-shadow: 0px 0px 10px 1px #6855FF;
+}
+
+#title {
+    text-align: center;
+    margin-top: 42px;
+    font-size: 40px;
+}
+
+.cards p {
+    margin-top: 20px;
+}
+
+/*===MODAL===*/
+
+.modal-overlay {
+    background-color: rgb(25, 0, 50, 0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal-max {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-content {
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    size: 50px;
+}
+
+.modal-content-max {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.modal .close-modal {
+    color: #25013f;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .max-modal {
+    color: #25013f;
+    position: absolute;
+    right: 45px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/*MAXIMIZAR*/
+.modal-overlay.maximize {
+    z-index: 3;
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*MODAL ATIVO*/
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+}
+
+.iframe-max {
+    width: 100%;
+    height: 100%;
+    top: 5%;
+    position: absolute;
+}
