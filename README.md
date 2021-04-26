@@ -2,6 +2,9 @@
 
 Exemplo de um portfolio criado a partir do desafio proposto pelo curso LaunchBase da Rocktseat.
 
+### Link de acesso
+https://carolferreiradev.github.io/desafioportifolio/
+
 ![enter image description here](https://github.com/anacarolinaferreira/desafioportifolio/blob/master/img/20200630_190223.gif)
 
 ### Tecnologias utilizadas
